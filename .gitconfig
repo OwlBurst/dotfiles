@@ -1,0 +1,13 @@
+[init]
+defaultBranch=main
+[user]
+email=mykhailo.yaremenko@outlook.com
+name=Mykhailo Yaremenko
+[core]
+autocrlf=input
+editor=flatpak run re.sonny.Commit
+
+[re.sonny.Commit]
+title-length-hint=50
+body-length-wrap=72
+auto-capitalize-title=true
