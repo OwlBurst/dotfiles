@@ -26,10 +26,17 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export LULE_W=$HOME/Pictures/Ponies
-export LULE_S=$HOME/apply_colors.sh
+# export LULE_W=$HOME/Pictures/Ponies
+# export LULE_S=$HOME/apply_colors.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 unset SSH_ASKPASS
+
+# bun completions
+[ -s "/home/sunburst/.bun/_bun" ] && source "/home/sunburst/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
